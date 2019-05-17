@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function sizePig() {
+            size = document.getElementById("size").value;
+            img = document.getElementById("pic");
+            img.width = 60 + 20 * size;
+        }
+    </script>
+    <style>
+
+        INPUT:focus {
+            color: red; /* Красный цвет текста */
+        }
+
+        option:active {
+            color: coral; /* Цвет подсветки */
+        }
+
+        a:link {
+            color: mediumspringgreen; /* Цвет непосещенных ссылок */
+        }
+
+        A:visited {
+            color: goldenrod; /* Цвет посещенных ссылок */
+        }
+
+        form:hover {
+            color: yellow; /* Цвет при наведении*/
+        }
+        span:first-child {
+            background-color: lime;
+        }
+        span:last-child {
+            background-color: darkkhaki;
+        }
+        q:lang(en) {
+            quotes: " ~ " " ~ ";
+        }
+
+        td {
+            text-align: center;
+            word-wrap: break-word;
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Название формы "Формы"</legend>
+        <table>
+            <tr>
+                <td>
+                    <p>Поле со списком
+                        <select name="select" size="1" multiple>
+                            <option selected value="s1">вариант #1</option>
+                            <option value="s1">вариант #2</option>
+                            <option value="s1">вариант #3</option>
+                            <option value="s1">вариант #4</option>
+                            <option value="s1">вариант #5</option></p>
+                </td>
+                <td>
+                    <p>Найти
+                        <input type="search" name="q" placeholder="Поиск"></p>
+                </td>
+                <td>
+                    <input type="number" name="N" step="1">
+                </td>
+                <td rowspan="2" height="60%">
+                    <input type="range" min="1" max="9" id="size"
+                           oninput="sizePig()" value="5"></p>
+                    <p><img src="D:\Homework\25.04\dinozavr.jpg" alt="" id="pic" width="50%" height="50%"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Поле со списком
+                        <select name="select" size="5">
+                            <option selected value="s1">вариант #1</option>
+                            <option value="s1">вариант #2</option>
+                            <option value="s1">вариант #3</option>
+                            <option value="s1">вариант #4</option>
+                            <option value="s1">вариант #5</option>
+                        </select>
+                </td>
+                <td>
+                    <p>Многострочный текст
+                        <textarea name="Text" rows="5"></textarea>
+                </td>
+                <td>
+                    <form action="handler.php"></form>
+                    <p><input name="radio" type="radio" value="radio_button#1">Radio button</p>
+                    <p><input name="radio" type="radio" value="radio_button#2">Radio button</p>
+                    <p><input name="radio" type="radio" value="radio_button#3">Radio button</p>
+                    <p><input name="radio" type="radio" value="radio_button#4">Radio button</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Цвет<input type="color" name="bg" value="#ff0000">
+                        <input type="submit" value="Выбрать"></p>
+                </td>
+                <td>
+                    <input type="file" name="photo" multiple accept="image/*,image/jpeg*">
+                </td>
+                <td>
+                    <input type="submit" value="Отправить">
+                </td>
+                <td>
+                    <button type="reset">Отчистить</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolor ea eaque eligendi
+                    exercitationem harum inventore, tempore veniam vitae. Asperiores cumque delectus dignissimos
+                    doloremque
+                    earum id quasi! Autem repudiandae, sapiente?
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><p align="left"><a href="http://htmlbook.ru/samcss/psevdoklassy"> Ссылка на
+                    псевдоклассы</a></p>
+                    <p align="left"><a href="https://developer.mozilla.org/ru/docs/Web/CSS/pseudo-elements"> Ссылка на
+                        псевдолементы</a></p>
+                    <p align="left"><a href="Psevdoklassy-i-psevdoelementy-HTML_CSS.png"> Псевдоклассы и
+                        псевдолементы</a></p>
+                    <p align="left"><span>Псевдоклассы определяют динамическое состояние элементов,</span><span> которое
+                        изменяется с помощью действий пользователя, а также положение в дереве документа.</span>
+                        <span> Примером такого состояния служит текстовая ссылка,</span><span> которая меняет свой
+                            цвет при наведении на неё курсора мыши.</span><span> При использовании псевдоклассов
+                            браузер не перегружает текущий документ, поэтому с помощью псевдоклассов можно
+                            получить разные динамические эффекты на странице.</span></p>
+                    <p><q lang="en">То be or not to be</q>.</p>
+                </td>
+            </tr>
+
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>
