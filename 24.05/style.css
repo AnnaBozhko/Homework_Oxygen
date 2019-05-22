@@ -1,0 +1,44 @@
+* {box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+div {
+    border: 1px solid black;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+}
+.header{
+    width: 100%;
+    background-color: aquamarine;
+    height: 50px;
+}
+
+.left {
+    float: left;
+    width: 30%;
+    height: 250px;
+}
+.right {
+    float: right;
+    width: calc(100% - 30%);
+    background-color: #ffaaaa;
+    height: 110px;
+}
+.right_w {
+    float: right;
+    width: 35%;
+    background-color: bisque;
+    height: 140px;
+}
+.right_h {
+    float: right;
+    width: 35%;
+    background-color: bisque;
+    height: 140px;
+}
