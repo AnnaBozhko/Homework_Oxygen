@@ -1,3 +1,6 @@
+* {box-sizing: border-box;
+    padding: 10px;
+}
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -6,12 +9,25 @@
 }
 .flex-dlock {
     flex-grow: 1;
-    background-color: gainsboro;
-    width: 30%;
-    float: left;
+
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
 }
 .hedaer {
     width: 100%;
     background-color: aquamarine;
     height: 50px;
+}
+aside {
+    width: 30%;
+    background-color: gainsboro;
+}
+img {
+    float: left;
+}
+article {
+
 }
