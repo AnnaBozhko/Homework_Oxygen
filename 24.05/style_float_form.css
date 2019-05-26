@@ -1,12 +1,22 @@
 * {box-sizing: border-box;
-    padding: 20px;
+    /*padding: 20px;*/
 }
-.clearfix::after {
-    display: block;
+/*.clearfix::after {
+    display: table;
     content: "";
     clear: both;
-}
+}*/
 div {
     border: 1px solid black;
+    float: left;
     text-align: center;
+    width: 16.6666%;
+    height: 250px;
+    padding: 5px;
+}
+.type_file {
+    width: 33.3333%;
+}
+.footer {
+    width: 100%;
 }
