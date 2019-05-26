@@ -1,0 +1,16 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-dlock {
+    flex-grow: 1;
+    background-color: gainsboro;
+    width: 30%;
+}
+.hedaer {
+width: 100%;
+    background-color: aquamarine;
+    height: 50px;
+}

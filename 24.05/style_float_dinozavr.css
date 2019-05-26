@@ -1,6 +1,5 @@
 * {box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    padding: 20px;
 }
 .clearfix::after {
     display: block;
@@ -9,9 +8,7 @@
 }
 div {
     border: 1px solid black;
-    align-self: center;
     text-align: center;
-    margin: auto;
 }
 .header{
     width: 100%;

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_float_form.css">
+</head>
+<body>
+
+
+<main>
+    <div>Поле со списком</div>
+    <div>
+        <form>
+            <select name="select" size="1" multiple>
+                <option selected value="s1">вариант #1</option>
+                <option value="s1">вариант #2</option>
+                <option value="s1">вариант #3</option>
+                <option value="s1">вариант #4</option>
+                <option value="s1">вариант #5</option>
+        </form>
+    </div>
+    <div>Найти</div>
+    <div>
+        <form>
+            <input type="search" name="q" placeholder="Поиск">
+        </form>
+    </div>
+    <div>
+        <input type="number" name="N" step="1">
+    </div>
+    <div>
+        <input type="range" min="1" max="9" id="size" oninput="sizePig()" value="5">
+    </div>
+    <div>Поле со списком</div>
+    <div>
+        <form>
+            <select name="select" size="5">
+                <option selected value="s1">вариант #1</option>
+                <option value="s1">вариант #2</option>
+                <option value="s1">вариант #3</option>
+                <option value="s1">вариант #4</option>
+                <option value="s1">вариант #5</option>
+            </select>
+        </form>
+    </div>
+    <div>Многострочный текст</div>
+    <div>
+        <textarea name="Text" rows="5"></textarea>
+    </div>
+    <div>
+        <form action="handler.php"></form>
+        <p><input name="radio" type="radio" value="radio_button#1">Radio button</p>
+        <p><input name="radio" type="radio" value="radio_button#2">Radio button</p>
+        <p><input name="radio" type="radio" value="radio_button#3">Radio button</p>
+        <p><input name="radio" type="radio" value="radio_button#4">Radio button</p>
+    </div>
+    <div>
+        <img src="E:\Homework\24.05\dinozavr.jpg" alt="" id="pic" width="50%" height="50%">
+    </div>
+    <div>Цвет</div>
+    <div>
+        <form>
+            <input type="color" name="bg" value="#ff0000">
+            <input type="submit" value="Выбрать"></p>
+        </form>
+    </div>
+    <div>
+        <input type="file" name="photo" multiple accept="image/*,image/jpeg*">
+    </div>
+    <div>
+        <input type="submit" value="Отправить">
+    </div>
+    <div>
+        <button type="reset">Отчистить</button>
+    </div>
+</main>
+<footer>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolores, eligendi et itaque, laborum magnam quaerat quasi quibusdam quidem saepe tenetur ullam? Earum et excepturi fuga quia recusandae tenetur voluptas?
+    </div>
+</footer>
+
+</body>
+</html>
