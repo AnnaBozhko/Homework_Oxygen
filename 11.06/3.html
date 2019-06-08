@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    var str = prompt('Введите имя пользователя')
+    if (str == 'Админ') {
+        var pol = prompt('Введите пароль');
+        if (pol == 'Черный властелин') {
+            alert('Добро пожаловать');
+        } else if (pol !== 'Черный властелин') {
+            alert('Пароль неверен');
+        } else {
+            alert('Вход отменен');
+        }
+    } else if (str !== 'Админ') {
+        alert('Я вас не знаю');
+    } else {
+        alert('Вход отменен');
+    }
+</script>
+
+</body>
+</html>
+
