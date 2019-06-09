@@ -10,20 +10,20 @@
 <body>
 
 <script>
-    var str = prompt('Введите имя пользователя')
+    var str = prompt('Введите имя пользователя');
     if (str == 'Админ') {
         var pol = prompt('Введите пароль');
         if (pol == 'Черный властелин') {
             alert('Добро пожаловать');
-        } else if (pol !== 'Черный властелин') {
-            alert('Пароль неверен');
-        } else {
+        } else if (pol == null) {
             alert('Вход отменен');
+        } else {
+            alert('Пароль неверен');
         }
-    } else if (str !== 'Админ') {
-        alert('Я вас не знаю');
+    } else if (str == null) {
+        alert('Вход отмененЯ вас не знаю');
     } else {
-        alert('Вход отменен');
+        alert('Я вас не знаю');
     }
 </script>
 
